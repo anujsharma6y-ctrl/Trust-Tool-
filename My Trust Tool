@@ -1,7 +1,7 @@
 from github import Github
 
 # Aapka Secret Token yahan aayega
-my_token = "Token"
+my_token = MY_GITHUB_TOKEN
 
 # GitHub se connect ho rahe hain
 g = Github(my_token)
