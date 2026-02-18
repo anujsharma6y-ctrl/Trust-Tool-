@@ -1,0 +1,29 @@
+from github import Github
+
+# Aapka Secret Token yahan aayega
+my_token = "Token"
+
+# GitHub se connect ho rahe hain
+g = Github(my_token)
+
+# Testing ke liye kisi bhi startup ka naam (Ex: 'facebook' ya 'stripe')
+repo_name = "facebook/react" 
+
+try:
+    repo = g.get_repo(repo_name)
+    print(f"--- Report for {repo_name} ---")
+    
+    # Check 1: Kya branch protected hai?
+    branch = repo.get_branch("main")
+    print(f"Main Branch Protected: {branch.protected}")
+    
+    # Check 2: Kitne stars hain (Trust factor)
+    print(f"Total Stars: {repo.stargazers_count}")
+    
+    print("----------------------------")
+    print("Success! Your tool is talking to GitHub.")
+
+except Exception as e:
+    print(f"Error: {e}")
+
+
