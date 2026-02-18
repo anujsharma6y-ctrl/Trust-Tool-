@@ -1,13 +1,13 @@
 
 TRUSTSHIELD SECURITY AUDIT REPORT
 ---------------------------------
-Repository: anujsharma6y-ctrl/Trust-Tool-
-Audit Time: 2026-02-18 12:46:45 UTC
-Next Scheduled Audit: 2026-02-19 12:46:45 UTC
-Status: SECURE
+Repository: Error: Repo Not Found
+Audit Time: N/A
+Next Scheduled Audit: Manual Check Required
+Status: ERROR
 
 FINDINGS:
-1. Vulnerabilities: 0 found.
+1. Vulnerabilities: N/A found.
 2. Branch Protection: Disabled
 3. Stars: 0
 
