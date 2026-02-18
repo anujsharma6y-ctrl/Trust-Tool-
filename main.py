@@ -7,9 +7,9 @@ token = os.getenv("MY_GITHUB_TOKEN")
 auth = Auth.Token(token)
 g = Github(auth=auth)
 
-# 2. Settings (Inhe aap badal sakte hain)
+# 2. Settings (Can be changed)
 repo_path = "anujsharma6y-ctrl/Trust-Tool-" 
-brand_name = "ANUJ SHARMA SECURITY LABS" # <-- Aapka Professional Naam
+brand_name = "ANUJ SHARMA SECURITY LABS"
 
 try:
     repo = g.get_repo(repo_path)
