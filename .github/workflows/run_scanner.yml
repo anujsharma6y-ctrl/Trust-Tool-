@@ -3,12 +3,14 @@ on:
   push:
     branches: [ "main" ]
   workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'  # Ye har raat 12 baje apne aap chalega
 
 jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # Ye line sabse zaroori hai
+      contents: write
       pages: write
       id-token: write
     steps:
@@ -31,13 +33,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }} # Yahan 'GITHUB_TOKEN' hi likhne dein
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./
           publish_branch: gh-pages
-          on:
-  push:
-    branches: [ "main" ]
-  schedule:
-    - cron: '0 0 * * *'  # Ye har raat 12 baje apne aap chalega
-    
 
