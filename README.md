@@ -26,7 +26,7 @@ Hosting: GitHub Pages
  👨‍💻 Author
 <div align="center">
 <h3>Anuj Sharma</h3>
-<p><b>Cybersecurity Enthusiast | Security Automation Specialist | Python for SecOps</b></p>
+<p><b>Cybersecurity Enthusiast | Security Automation Specialist | Python for SecOps |DevSecOps Learner |Cloud-Native Security Automator </b></p>
 <p>
 I am passionate about bridging the gap between manual security auditing and automated cloud-native solutions. My focus is on building tools that make security accessible, transparent, and autonomous.
 </p>
@@ -37,7 +37,7 @@ I am passionate about bridging the gap between manual security auditing and auto
 </p>
 🔗 Connect with me
 <p>
-<a href="https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME">
+<a href="https://www.linkedin.com/in/anuj-sharma-537a403aa?utm_source=share_via&utm_content=profile&utm_medium=member_android">
 <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn">
 </a>
 <a href="https://github.com/anujsharma6y-ctrl">
