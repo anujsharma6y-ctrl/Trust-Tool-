@@ -9,7 +9,7 @@ g = Github(auth=auth)
 
 # 2. AAPKI REPO KA NAAM (Yahan dhyan dein!)
 # Ise "username/repository" format mein hi rakhein
-repo_name = "Security Audit Report" 
+repo_name = "anujsharma6y-ctrl/Trust-Tool-" 
 
 try:
     repo = g.get_repo(repo_name)
@@ -106,3 +106,17 @@ html_content = f"""
 
 with open("index.html", "w") as f:
     f.write(html_content)
+    
+
+# 2. Backend Repo Name (Ise mat badalna)
+repo_name = "anujsharma6y-ctrl/Trust-Tool-" 
+
+# 3. Website par dikhne wala NAAM (Ise aap jo chahe badal dein)
+display_name = "ANUJ SHARMA SECURITY LABS" # <-- Yahan apna naam likhein
+
+# ... (baaki logic wahi rahega)
+
+# 4. HTML Dashboard mein display_name use karein
+# Jahan niche <h2>{repo_name}</h2> likha tha, wahan ab <h2>{display_name}</h2> hoga
+
+
