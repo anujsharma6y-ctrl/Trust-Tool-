@@ -7,7 +7,7 @@ auth = Auth.Token(token)
 g = Github(auth=auth)
 
 # Data Fetching (Aap 'facebook/react' ki jagah apni repo ka naam bhi daal sakte hain)
-repo_name = "facebook/react"
+repo_name = "Trust Tool"
 repo = g.get_repo(repo_name)
 stars = repo.stargazers_count
 is_protected = repo.get_branch("main").protected
