@@ -8,7 +8,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: write  # Ye line sabse zaroori hai
+      pages: write
+      id-token: write
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -20,16 +22,16 @@ jobs:
 
       - name: Install library
         run: pip install PyGithub
+
       - name: Run script
         env:
           MY_GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
         run: python main.py
-        
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.MY_GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }} # Yahan 'GITHUB_TOKEN' hi likhne dein
           publish_dir: ./
           publish_branch: gh-pages
-          
+
