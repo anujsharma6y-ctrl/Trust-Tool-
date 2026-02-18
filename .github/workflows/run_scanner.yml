@@ -34,4 +34,10 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }} # Yahan 'GITHUB_TOKEN' hi likhne dein
           publish_dir: ./
           publish_branch: gh-pages
+          on:
+  push:
+    branches: [ "main" ]
+  schedule:
+    - cron: '0 0 * * *'  # Ye har raat 12 baje apne aap chalega
+    
 
