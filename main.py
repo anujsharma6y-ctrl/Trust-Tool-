@@ -7,7 +7,7 @@ auth = Auth.Token(token)
 g = Github(auth=auth)
 
 # Target Repo
-repo_name = "facebook/react" 
+repo_name = "Security Audit" 
 repo = g.get_repo(repo_name)
 
 # Security Logic
