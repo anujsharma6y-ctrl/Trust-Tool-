@@ -9,7 +9,7 @@ g = Github(auth=auth)
 
 # 2. AAPKI REPO KA NAAM (Yahan dhyan dein!)
 # Ise "username/repository" format mein hi rakhein
-repo_name = "anujsharma6y-ctrl/Trust-Tool-" 
+repo_name = "Security Audit Report" 
 
 try:
     repo = g.get_repo(repo_name)
